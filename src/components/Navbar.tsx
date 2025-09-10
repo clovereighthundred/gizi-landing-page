@@ -65,17 +65,31 @@ const Navbar = () => {
         {/* Desktop Navigation */}
         <div className="hidden w-full md:flex space-x-1">
           <NavLinks />
+
+          {/* Waitlist Button */}
+          <Link to="">
+            <Button
+              variant="outline"
+              className="ml-6 p-4 font-Be-Vietnam-Pro text-[17px] text-[#2556bc] border-[#2556bc] hover:bg-[#2556bc] hover:text-white transition-colors duration-200"
+            >
+              Join Waitlist
+            </Button>
+          </Link>
         </div>
 
         {/* Mobile Navigation Button*/}
         <div className="md:hidden">
           <Button
-            variant={"ghost"}
+            variant="ghost"
             onClick={toggleNavbar}
             className="p-2 text-black hover:text-[#2556bc] transition-colors duration-200"
             aria-label="Toggle navigation menu"
           >
-            {isOpen ? <X className="h-8 w-8" /> : <Menu className="h-8 w-8" />}
+            {isOpen ? (
+              <X className="h-12 w-12" />
+            ) : (
+              <Menu className="h-12 w-12" />
+            )}
           </Button>
         </div>
       </nav>
@@ -83,7 +97,7 @@ const Navbar = () => {
       {/* Mobile Navigation Menu */}
       {isOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-white border-t border-gray-200 shadow-lg">
-          <div className="flex flex-col py-4">
+          <div className="flex flex-col py-6">
             <NavLinks />
           </div>
         </div>

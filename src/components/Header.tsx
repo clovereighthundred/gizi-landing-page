@@ -10,7 +10,7 @@ function Header() {
       >
         <img src="/logo_path975.png" alt="Gizi Logo" className="h-10 w-10" />
 
-        <h2 className="font-Poppins text-3xl font-semibold text-black">GIZI</h2>
+        <h2 className="font-Poppins text-2xl font-semibold text-black">GIZI</h2>
       </Link>
       <Navbar />
     </header>
