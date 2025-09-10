@@ -12,55 +12,8 @@ function Hero() {
     setEmail("");
   };
 
-  // return (
-  //   <section className="pt-32 pb-20 px-6 relative overflow-hidden bg-[#f8f8f8] flex justify-center items-center">
-  //     <div className="flex items-center flex-col xl:flex-row justify-center gap-10 md:gap-20 w-full relative">
-  //       <div className="grid lg:grid-cols-2 gap-12 items-center">
-  //         {/* Hero Content */}
-  //         <div className="space-y-8">
-  //           <div className="space-y-4">
-  //             <h1 className="text-4xl/tight sm:text-8xl/tight lg:text-6xl xl:text-7xl mb-6 lg:mb-8 font-semibold font-Poppins text-black text-center md:text-left leading-tight">
-  //               Find gadgets that suit{" "}
-  //               <span className="text-[#2556bc]">your needs</span>
-  //             </h1>
-  //             <br />
-  //             <p className="text-[20px] sm:text-[20px] lg:text-xl mb-8 lg:mb-12 text-muted-foreground font-Be-Vietnam-Pro">
-  //               Our intelligent system eliminates the guesswork by analyzing
-  //               your unique needs and matching you to the perfect laptop in
-  //               under 60 seconds.
-  //             </p>
-  //           </div>
-
-  //           {/* Waitlist email form */}
-  //           <div className="space-y-4 ">
-  //             <h3 className="text-lg font-Be-Vietnam-Pro font-semibold text-black">
-  //               Join the waitlist for early access
-  //             </h3>
-  //             <form onSubmit={handleSubmit} className="flex gap-3 max-w-md">
-  //               <Input
-  //                 type="email"
-  //                 placeholder="Enter your email"
-  //                 value={email}
-  //                 onChange={(e) => setEmail(e.target.value)}
-  //                 required
-  //                 className="flex-1"
-  //               />
-  //               <Button type="submit" variant="default" className="px-6">
-  //                 Join Waitlist
-  //               </Button>
-  //             </form>
-  //             <p className=" font-Be-Vietnam-Pro text-sm text-muted-foreground">
-  //               Be the first to know when we launch. No spam, ever.
-  //             </p>
-  //           </div>
-  //         </div>
-  //       </div>
-  //     </div>
-  //   </section>
-  // );
-
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen overflow-hidden">
       {/* Gradient Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-white to-blue-50"></div>
       {/* Animated Background Elements */}
@@ -70,9 +23,9 @@ function Hero() {
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-blue-50/10 to-purple-50/10 rounded-full blur-3xl"></div>
       </div>
       {/* Main Content */}
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 pt-4 sm:pt-12 lg:pt-16 pb-16 sm:pb-20 lg:pb-24">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center lg:text-left space-y-8 lg:space-y-12">
+      <div className="relative z-10 mx-0 md:mx-0 px-4 sm:px-6 lg:px-0 pt-4 sm:pt-12 lg:pt-10 pb-16 sm:pb-20 lg:pb-24 lg:pl-8 xl:pl-16 lg:grid lg:grid-cols-2 lg:gap-6">
+        <div className="max-w-6xl lg:mx-0 lg:ml-0">
+          <div className="text-center lg:text-left space-y-8 lg:space-y-12 lg:max-w-4xl lg:mx-0">
             {/* Badge */}
             <div className="flex justify-center lg:justify-start">
               <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/80 backdrop-blur-sm border border-blue-100 shadow-sm">
@@ -187,16 +140,27 @@ function Hero() {
                 </div>
               </div>
             </div>
-            {/* Scroll Indicator */}
-            <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-              <div className="w-6 h-10 border-2 border-gray-300 rounded-full flex justify-center">
-                <div className="w-1 h-3 bg-gray-400 rounded-full mt-2 animate-pulse"></div>
-              </div>
-            </div>
+          </div>
+        </div>
+
+        {/* Hero Image visible only on desktop */}
+        <div className="hidden lg:flex lg:items-stretch lg:justify-end lg:h-full">
+          <div className="relative w-full max-w-2xl xl:max-w-3xl flex items-center">
+            <img
+              src="src/assets/macbook3.png"
+              alt="Perfect laptop match for your needs"
+              className="w-full h-full object-cover drop-shadow-2xl rounded-2xl hover:scale-105 transition-transform duration-300 max-h-[800px] lg:max-h-[900px] xl:max-h-[1000px]"
+            />
+          </div>
+        </div>
+        {/* Scroll Indicator */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+          <div className="w-6 h-10 border-2 border-gray-300 rounded-full flex justify-center">
+            <div className="w-1 h-3 bg-gray-400 rounded-full mt-2 animate-pulse"></div>
           </div>
         </div>
       </div>{" "}
-      {/* Content ends here */}
+      {/* Main content ends here */}
     </section>
   );
 }
