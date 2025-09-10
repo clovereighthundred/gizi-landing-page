@@ -9,6 +9,9 @@
   --font-Poppins: "Poppins", "sans-serif";
   --font-Be-Vietnam-Pro: "Be Vietnam Pro", "sans-serif";
 
+  --color-sapphire: #2556bc;
+  --color-oxford-blue: #05143d;
+
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
