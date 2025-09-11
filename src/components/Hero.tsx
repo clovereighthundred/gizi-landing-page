@@ -78,7 +78,7 @@ function Hero() {
             </div>
 
             {/* Waitlist Form */}
-            <div className="bg-white backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/20 shadow-xl max-w-md mx-auto lg:mx-0">
+            <div className="bg-white backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/20 shadow-xl max-w-md mx-auto lg:mx-0 hover:scale-[1.04] transition-all duration-200">
               <div className="space-y-6">
                 <div className="space-y-2">
                   <h3 className="text-xl font-semibold font-Be-Vietnam-Pro text-gray-900">
@@ -103,7 +103,7 @@ function Hero() {
 
                   <Button
                     type="submit"
-                    className="w-full bg-gradient-to-r from-[#2556bc] to-blue-600 hover:from-[#1e4a9f] hover:to-blue-700 text-white font-semibold py-3 px-6 rounded-xl transform hover:scale-[1.02] transition-all duration-200 shadow-lg hover:shadow-xl"
+                    className="w-full bg-gradient-to-r from-[#2556bc] to-blue-600 hover:from-[#1e4a9f] hover:to-blue-700 text-white font-semibold py-3 px-6 rounded-xl transform hover:scale-[1.05] transition-all duration-200 shadow-lg hover:shadow-xl"
                   >
                     <span className="flex items-center justify-center gap-2">
                       Join Waitlist
@@ -149,7 +149,7 @@ function Hero() {
             <img
               src="src/assets/macbook3.png"
               alt="Perfect laptop match for your needs"
-              className="w-full h-full object-cover drop-shadow-2xl rounded-2xl hover:scale-105 transition-transform duration-300 max-h-[800px] lg:max-h-[900px] xl:max-h-[1000px]"
+              className="w-full h-[900px] object-cover drop-shadow-2xl rounded-2xl hover:scale-105 transition-transform duration-300 max-h-[900px] lg:min-h-screen xl:max-h-[1000px]"
             />
           </div>
         </div>
