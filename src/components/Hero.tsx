@@ -13,7 +13,7 @@ function Hero() {
   };
 
   return (
-    <section className="relative min-h-screen overflow-hidden">
+    <section className="relative lg:min-h-screen overflow-hidden">
       {/* Gradient Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-white to-blue-50"></div>
       {/* Animated Background Elements */}
@@ -23,9 +23,9 @@ function Hero() {
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-blue-50/10 to-purple-50/10 rounded-full blur-3xl"></div>
       </div>
       {/* Main Content */}
-      <div className="relative z-10 mx-0 md:mx-0 px-4 sm:px-6 lg:px-0 pt-4 sm:pt-12 lg:pt-10 pb-16 sm:pb-20 lg:pb-24 lg:pl-8 xl:pl-16 lg:grid lg:grid-cols-2 lg:gap-6">
+      <div className="relative z-10 mx-0 md:mx-0 px-4 sm:px-6 lg:px-0 pt-4 sm:pt-12 lg:pt-10 pb-8 sm:pb-10 md:pb-12 lg:pb-24 lg:pl-8 xl:pl-16 lg:grid lg:grid-cols-2 lg:gap-6">
         <div className="max-w-6xl lg:mx-0 lg:ml-0">
-          <div className="text-center lg:text-left space-y-8 lg:space-y-12 lg:max-w-4xl lg:mx-0">
+          <div className="text-center lg:text-left space-y-6 md:space-y-8 lg:space-y-12 lg:max-w-4xl lg:mx-0">
             {/* Badge */}
             <div className="flex justify-center lg:justify-start">
               <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/80 backdrop-blur-sm border border-blue-100 shadow-sm">
