@@ -3,6 +3,7 @@
 }
 
 import Hero from "./Hero";
+import Problem from "./Problem";
 
 function Homepage() {
   return (
@@ -11,6 +12,7 @@ function Homepage() {
       className="w-full min-h-[85vh] bg-[#fdfdfd] flex flex-col pt-[20px] sm:pt-[0]"
     >
       <Hero />
+      <Problem />
     </div>
   );
 }
