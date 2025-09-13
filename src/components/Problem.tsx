@@ -19,7 +19,7 @@ function Problem() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <div className="bg-[#f2f2f2]/80 p-6 lg:p-8 rounded-3xl min-h-[200px] lg:justify-center lg:m-4 flex flex-col">
-              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-[#fdffff] text-sapphire mb-4 lg:mb-0">
+              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-[#fdffff] text-sapphire mb-4">
                 <Cpu className="w-6 h-6" />
               </div>
               <h3 className="text-2xl lg:text-3xl font-semibold mb-3 font-Be-Vietnam-Pro">
