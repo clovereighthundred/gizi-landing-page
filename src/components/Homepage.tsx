@@ -5,6 +5,7 @@
 import Hero from "./Hero";
 import Problem from "./Problem";
 import Solution from "./Solution";
+import Benefits from "./Benefits";
 
 function Homepage() {
   return (
@@ -15,6 +16,7 @@ function Homepage() {
       <Hero />
       <Problem />
       <Solution />
+      <Benefits />
     </div>
   );
 }
