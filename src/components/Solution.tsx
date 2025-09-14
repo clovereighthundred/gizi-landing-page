@@ -8,6 +8,11 @@ function Solution() {
       <div className="relative z-10 container mx-auto px-4 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12 lg:mb-16 space-y-5">
+            <div className="my-4 lg:my-6 p-4">
+              <Button className="text-xs font-medium rounded-xl font-Be-Vietnam-Pro text-white bg-sapphire transition-all duration-300">
+                HOW IT WORKS
+              </Button>
+            </div>
             <h2 className="text-black font-Poppins font-medium text-4xl lg:text-6xl tracking-tight">
               Meet the smarter way to choose your next laptop.
             </h2>
@@ -17,11 +22,6 @@ function Solution() {
               programmer, gamer, or student — and recommends the laptop that's{" "}
               <span className="italic">actually</span> built for you.
             </p>
-            <div className="my-4 lg:my-6 p-4">
-              <Button className="text-xs font-medium rounded-xl font-Be-Vietnam-Pro text-white bg-electric-indigo transition-all duration-300">
-                HOW IT WORKS
-              </Button>
-            </div>
           </div>
         </div>
 
