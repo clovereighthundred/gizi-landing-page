@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import {
   Accordion,
   AccordionContent,
@@ -46,11 +45,11 @@ function Faqs() {
             <h2 className="text-black font-Poppins font-medium text-4xl lg:text-6xl tracking-tight">
               Everything you want to know
             </h2>
-            <div className="my-4 lg:my-6 p-4">
+            {/* <div className="my-4 lg:my-6 p-4">
               <Button className="text-xs font-medium rounded-xl font-Be-Vietnam-Pro text-white bg-sapphire transition-all duration-300">
                 FAQs
               </Button>
-            </div>
+            </div> */}
           </div>
 
           {/* FAQ Accordions */}
