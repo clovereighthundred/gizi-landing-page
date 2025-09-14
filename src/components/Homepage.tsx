@@ -7,6 +7,7 @@ import Problem from "./Problem";
 import Solution from "./Solution";
 import Benefits from "./Benefits";
 import Faqs from "./Faqs";
+import Footer from "./Footer";
 
 function Homepage() {
   return (
@@ -19,6 +20,7 @@ function Homepage() {
       <Solution />
       <Benefits />
       <Faqs />
+      <Footer />
     </div>
   );
 }
