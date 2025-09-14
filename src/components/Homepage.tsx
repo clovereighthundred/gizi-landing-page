@@ -6,6 +6,7 @@ import Hero from "./Hero";
 import Problem from "./Problem";
 import Solution from "./Solution";
 import Benefits from "./Benefits";
+import Faqs from "./Faqs";
 
 function Homepage() {
   return (
@@ -17,6 +18,7 @@ function Homepage() {
       <Problem />
       <Solution />
       <Benefits />
+      <Faqs />
     </div>
   );
 }
