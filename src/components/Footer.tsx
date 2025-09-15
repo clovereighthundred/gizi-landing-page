@@ -55,7 +55,7 @@ const Footer = () => {
           <ul className="mt-8 flex justify-center gap-4 sm:mt-0 lg:justify-end">
             <li>
               <a
-                href="https://instagram.com/yourhandle"
+                href="https://www.instagram.com/gizigadgets?utm_source=ig_web_button_share_sheet&igsh=OWY1YjJyZ2IyY2py"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -69,7 +69,7 @@ const Footer = () => {
 
             <li>
               <a
-                href="https://instagram.com/yourhandle"
+                href="https://t.me/gizigadgets"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -83,7 +83,7 @@ const Footer = () => {
 
             <li>
               <a
-                href="https://instagram.com/yourhandle"
+                href="https://gizigadgets@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
