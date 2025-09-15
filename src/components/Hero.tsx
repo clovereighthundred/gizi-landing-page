@@ -147,7 +147,7 @@ function Hero() {
         <div className="hidden lg:flex lg:items-stretch lg:justify-end lg:h-full">
           <div className="relative w-full max-w-2xl xl:max-w-3xl flex items-center">
             <img
-              src="src/assets/macbook3.png"
+              src="/macbook3.png"
               alt="Perfect laptop match for your needs"
               className="w-full h-[900px] object-cover drop-shadow-2xl rounded-2xl hover:scale-105 transition-transform duration-300 max-h-[900px] lg:min-h-screen xl:max-h-[1000px]"
             />

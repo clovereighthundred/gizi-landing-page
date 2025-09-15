@@ -46,7 +46,7 @@ function Solution() {
             <div className="order-1 lg:order-2">
               <div className="relative">
                 <img
-                  src="src/assets/typing.jpg"
+                  src="/typing.jpg"
                   alt="Step 1 illustration"
                   className="w-full h-auto rounded-2xl shadow-lg max-w-2xl mx-auto
                   transform transition-all duration-300 
@@ -76,7 +76,7 @@ function Solution() {
             <div className="order-1 lg:order-1">
               <div className="relative">
                 <img
-                  src="src/assets/processing.jpg"
+                  src="/processing.jpg"
                   alt="Step 1 illustration"
                   className="w-full h-auto rounded-2xl shadow-lg max-w-2xl mx-auto
                   transform transition-all duration-300 
@@ -106,7 +106,7 @@ function Solution() {
             <div className="order-1 lg:order-2">
               <div className="relative">
                 <img
-                  src="src/assets/macbook5.jpg"
+                  src="/macbook5.jpg"
                   alt="Step 3 illustration"
                   className="w-full h-auto rounded-2xl shadow-lg max-w-2xl mx-auto
                   transform transition-all duration-300 
