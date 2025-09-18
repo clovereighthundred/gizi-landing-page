@@ -1,15 +1,32 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useState } from "react";
+import { supabase } from "@/lib/supabaseClient";
 
 function Hero() {
   const [email, setEmail] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [message, setMessage] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     // Handle email submission
-    console.log("Email submitted:", email);
-    setEmail("");
+    setLoading(true);
+    setMessage("");
+
+    const { error } = await supabase
+      .from("waitlist")
+      .insert([{ email, status: "pending" }]);
+
+    if (error) {
+      console.error(error);
+      setMessage("Something went wrong. Please try again.");
+    } else {
+      setMessage("Thanks for joining the waitlist!🎉");
+      setEmail("");
+    }
+
+    setLoading(false);
   };
 
   return (
@@ -103,8 +120,10 @@ function Hero() {
 
                   <Button
                     type="submit"
+                    disabled={loading}
                     className="w-full bg-gradient-to-r from-[#2556bc] to-blue-600 hover:from-[#1e4a9f] hover:to-blue-700 text-white font-semibold py-3 px-6 rounded-xl transform hover:scale-[1.05] transition-all duration-200 shadow-lg hover:shadow-xl"
                   >
+                    {loading ? "Submitting..." : ""}
                     <span className="flex items-center justify-center gap-2">
                       Join Waitlist
                       <svg
@@ -122,6 +141,9 @@ function Hero() {
                       </svg>
                     </span>
                   </Button>
+                  {message && (
+                    <p className="text-center text-sm mt-2">{message}</p> // Display success or error message
+                  )}
                 </form>
 
                 <div className="flex items-center gap-2 text-sm text-gray-500">
