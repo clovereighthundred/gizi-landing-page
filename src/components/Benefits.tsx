@@ -2,7 +2,7 @@ import { Brain, Rocket, Target, Zap } from "lucide-react";
 
 function Benefits() {
   return (
-    <section className="relative py-16 lg:py-24 bg-[#f5f5f5]">
+    <section id="benefits" className="relative py-16 lg:py-24 bg-[#f5f5f5]">
       <div className="absolute inset-0 bg-gradient-to-bl from-slate-50 via-white to-[#5d2de6]/12"></div>
       <div className="relative z-10 container mx-auto px-4 lg:px-8">
         <div className="max-w-6xl mx-auto">

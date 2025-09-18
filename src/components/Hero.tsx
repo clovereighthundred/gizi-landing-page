@@ -95,7 +95,10 @@ function Hero() {
             </div>
 
             {/* Waitlist Form */}
-            <div className="bg-white backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/20 shadow-xl max-w-md mx-auto lg:mx-0 hover:scale-[1.04] transition-all duration-200">
+            <div
+              id="waitlist"
+              className="bg-white backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/20 shadow-xl max-w-md mx-auto lg:mx-0 hover:scale-[1.04] transition-all duration-200"
+            >
               <div className="space-y-6">
                 <div className="space-y-2">
                   <h3 className="text-xl font-semibold font-Be-Vietnam-Pro text-gray-900">

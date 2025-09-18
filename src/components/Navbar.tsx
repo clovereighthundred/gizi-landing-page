@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 
 const NavLinks = () => {
@@ -20,34 +19,34 @@ const NavLinks = () => {
 
   return (
     <>
-      <Link
+      <a
         onClick={handleScroll}
-        to="/about"
+        href="#about"
         className="font-Be-Vietnam-Pro text-[16px] font-semibold text-black hover:text-[#2556bc] px-3 py-3 sm:py-2 transition-colors duration-200 block border-b border-gray-100 sm:border-none last:border-none"
       >
         About
-      </Link>
-      <Link
+      </a>
+      <a
         onClick={handleScroll}
-        to="/benefits"
+        href="#features"
         className=" font-Be-Vietnam-Pro text-[16px] font-semibold text-black hover:text-[#2556bc] px-3 py-3 sm:py-2 transition-colors duration-200 block border-b border-gray-100 sm:border-none last:border-none"
       >
-        Benefits
-      </Link>
-      <Link
+        Features
+      </a>
+      <a
         onClick={handleScroll}
-        to="/features"
+        href="#benefits"
         className="font-Be-Vietnam-Pro text-[16px] font-semibold text-black hover:text-[#2556bc] px-3 py-3 sm:py-2 transition-colors duration-200 block border-b border-gray-100 sm:border-none last:border-none"
       >
-        Features
-      </Link>
-      <Link
+        Benefits
+      </a>
+      <a
         onClick={handleScroll}
-        to="/faqs"
+        href="#faqs"
         className="font-Be-Vietnam-Pro text-[16px] font-semibold text-black hover:text-[#2556bc] px-3 py-3 sm:py-2 transition-colors duration-200 block border-b border-gray-100 sm:border-none last:border-none"
       >
         FAQs
-      </Link>
+      </a>
     </>
   );
 };
@@ -67,14 +66,14 @@ const Navbar = () => {
           <NavLinks />
 
           {/* Waitlist Button */}
-          <Link to="">
+          <a href="#waitlist">
             <Button
               variant="outline"
               className="ml-6 p-4 font-Be-Vietnam-Pro text-[17px] text-[#2556bc] border-[#2556bc] hover:bg-[#2556bc] hover:text-white transition-colors duration-200"
             >
               Join Waitlist
             </Button>
-          </Link>
+          </a>
         </div>
 
         {/* Mobile Navigation Button*/}

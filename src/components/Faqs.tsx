@@ -36,7 +36,7 @@ function Faqs() {
   ];
 
   return (
-    <section className="relative py-16 lg:py-24 bg-slate-300">
+    <section id="faqs" className="relative py-16 lg:py-24 bg-slate-300">
       {/* Gradient Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-white to-blue-50"></div>
       <div className="relative z-10 container mx-auto px-4 lg:px-8">
