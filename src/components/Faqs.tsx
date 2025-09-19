@@ -54,7 +54,7 @@ function Faqs() {
 
           {/* FAQ Accordions */}
           <div className="max-w-4xl mx-auto">
-            <div className="bg-[#f8f8f8] rounded-2xl shadow-lg border border-gray-100 p-6 sm:p-12">
+            <div className="rounded-2xl border border-gray-100 p-6 sm:p-12">
               <Accordion type="single" collapsible className="w-full space-y">
                 {faqs.map((faq, index) => (
                   <AccordionItem key={index} value={`item-${index}`}>
