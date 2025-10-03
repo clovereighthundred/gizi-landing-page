@@ -14,7 +14,7 @@ function Solution() {
               </Button>
             </div>
             <h2 className="text-black font-Poppins font-medium text-4xl lg:text-6xl tracking-tight">
-              Meet the smarter way to choose your next laptop.
+              Meet the smarter way to purchase your next laptop.
             </h2>
             <p className="text-gray-600 font-Be-Vietnam-Pro text-base lg:text-[20px]">
               No more spec overload. No more wasted money. Our algorithm
@@ -104,6 +104,34 @@ function Solution() {
               </div>
             </div>
             <div className="order-1 lg:order-2">
+              <div className="relative">
+                <img
+                  src="/macbook5.jpg"
+                  alt="Step 3 illustration"
+                  className="w-full h-auto rounded-2xl shadow-lg max-w-2xl mx-auto
+                  transform transition-all duration-300 
+                  hover:scale-105 hover:-translate-y-1 hover:shadow-2xl hover:shadow-blue-500/20"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Image + Card 4 */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6 items-center">
+            <div className="order-2 lg:order-2">
+              <div className="space-y-4">
+                <div className="inline-flex items-center px-3 py-1 rounded-full bg-orange-100 text-orange-700 text-sm font-medium">
+                  Step 4
+                </div>
+                <h3 className="text-2xl lg:text-4xl font-semibold text-gray-900 font-Be-Vietnam-Pro">
+                  Purchase your perfect fit
+                </h3>
+                <p className="text-gray-600 text-lg lg:text-[20px] leading-normal font-Be-Vietnam-Pro">
+                  Select your ideal laptop from our tailored list and complete your order with confidence
+                </p>
+              </div>
+            </div>
+            <div className="order-1 lg:order-1">
               <div className="relative">
                 <img
                   src="/macbook5.jpg"
