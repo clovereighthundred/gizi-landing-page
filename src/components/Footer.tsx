@@ -18,10 +18,12 @@ const Footer = () => {
             launch.
           </p>
 
-          <button className="mt-8 inline-flex items-center gap-2 rounded-full bg-blue-600 px-8 py-4 text-sm font-semibold text-white hover:bg-blue-700 transition-colors duration-200 shadow-lg hover:shadow-xl">
-            Join the Waitlist
-            <ArrowRight className="w-4 h-4" />
-          </button>
+          <a href="#waitlist">
+            <button className="mt-8 inline-flex items-center gap-2 rounded-full bg-blue-600 px-8 py-4 text-sm font-semibold text-white hover:bg-blue-700 transition-colors duration-200 shadow-lg hover:shadow-xl">
+              Join the Waitlist
+              <ArrowRight className="w-4 h-4" />
+            </button>
+          </a>
         </div>
 
         <div className="mt-20 border-t border-gray-200 pt-8 sm:flex sm:items-center sm:justify-between lg:mt-28">
