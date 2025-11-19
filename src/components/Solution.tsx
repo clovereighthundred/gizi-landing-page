@@ -17,7 +17,7 @@ function Solution() {
               Meet the smarter way to purchase your tech.
             </h2>
             <p className="text-gray-600 font-Be-Vietnam-Pro text-base lg:text-[20px]">
-              We analyze your actual needs — whether you design, code, game, or
+              We analyze your actual needs, whether you design, code, game, or
               study — and match you with the device{" "}
               <span className="italic">truly</span> built for you.
             </p>
