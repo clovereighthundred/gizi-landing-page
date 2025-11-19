@@ -10,23 +10,23 @@ function Faqs() {
     {
       question: "How does the recommendation system work?",
       answer:
-        "Our AI system analyzes your preferences, usage patterns, and requirements, then cross-references this data with our extensive database of gadgets, expert reviews, and user feedback to provide personalized recommendations that best match your needs.",
-    },
-    {
-      question:
-        "What makes your recommendations different from just Googling or watching reviews?",
-      answer:
-        "Reviews and spec sheets can be overwhelming. Our system processes thousands of data points — real-world benchmarks, expert reviews, and performance insights — and translates them into clear, personalized recommendations tailored to you.",
+        "Our AI system analyzes your preferences, usage patterns, and requirements, then cross-references this data with our extensive database of products, expert reviews, and user feedback to provide personalized recommendations that best match your needs.",
     },
     {
       question: "Will I only see one laptop recommendation?",
       answer:
-        "No. You'll get an array of options, each suited to your profile. We also explain why each one is a match, so you can compare and choose confidently.",
+        "No, you'll get a shortlist — and we'll clearly show the advantages of each option and how it relates to you, so you can choose with confidence.",
     },
     {
-      question: "Are the laptops shown available for purchase?",
+      question:
+        "What makes your agent different from just Googling or watching reviews?",
       answer:
-        "Yes. Every laptop recommended on our platform is available for purchase directly, just like a regular e-commerce store.",
+        "Reviews and spec sheets can be overwhelming. Our system processes thousands of data points — real-world benchmarks, expert reviews, and performance insights — and translates them into clear, personalized recommendations tailored to you.",
+    },
+    {
+      question: "Are the products shown available for purchase?",
+      answer:
+        "Yes. Every device recommended on our platform is available for purchase and delivery, directly to you.",
     },
     {
       question: "How do you protect my data?",
