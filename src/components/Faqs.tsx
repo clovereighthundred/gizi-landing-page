@@ -14,7 +14,7 @@ function Faqs() {
     {
       question: "How does the recommendation system work?",
       answer:
-        "Our AI system analyzes your preferences, usage patterns, and requirements, then cross-references this data with our extensive database of products, expert reviews, and user feedback to provide personalized recommendations that best match your needs.",
+        "Our system analyzes your preferences, usage patterns, and requirements, then cross-references this data with our extensive database of products, expert reviews, and user feedback to provide personalized recommendations that best match your needs.",
     },
     {
       question: "Will I only see one laptop recommendation?",
