@@ -30,9 +30,6 @@ function Solution() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6 items-center">
             <div className="order-2 lg:order-1">
               <div className="space-y-4">
-                <div className="inline-flex items-center px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-sm font-medium">
-                  Step 1
-                </div>
                 <h3 className="text-2xl lg:text-4xl font-semibold text-gray-900 font-Be-Vietnam-Pro">
                   Tell us what matters
                 </h3>
@@ -60,9 +57,6 @@ function Solution() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6 items-center">
             <div className="order-2 lg:order-2">
               <div className="space-y-4">
-                <div className="inline-flex items-center px-3 py-1 rounded-full bg-purple-100 text-purple-700 text-sm font-medium">
-                  Step 2
-                </div>
                 <h3 className="text-2xl lg:text-4xl font-semibold text-gray-900 font-Be-Vietnam-Pro">
                   AI does the heavy lifting
                 </h3>
@@ -90,9 +84,6 @@ function Solution() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6 items-center">
             <div className="order-2 lg:order-1">
               <div className="space-y-4">
-                <div className="inline-flex items-center px-3 py-1 rounded-full bg-green-100 text-green-700 text-sm font-medium">
-                  Step 3
-                </div>
                 <h3 className="text-2xl lg:text-4xl font-semibold text-gray-900 font-Be-Vietnam-Pro">
                   Get personalized results
                 </h3>
@@ -120,9 +111,6 @@ function Solution() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6 items-center">
             <div className="order-2 lg:order-2">
               <div className="space-y-4">
-                <div className="inline-flex items-center px-3 py-1 rounded-full bg-orange-100 text-orange-700 text-sm font-medium">
-                  Step 4
-                </div>
                 <h3 className="text-2xl lg:text-4xl font-semibold text-gray-900 font-Be-Vietnam-Pro">
                   Purchase your perfect fit
                 </h3>
