@@ -2,6 +2,8 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useState } from "react";
 import { supabase } from "@/lib/supabaseClient";
+import { useInView } from "@/lib/useInView";
+import "@/lib/scrollAnimations.css";
 
 function Hero() {
   const [email, setEmail] = useState("");
@@ -29,6 +31,11 @@ function Hero() {
     setLoading(false);
   };
 
+  const { ref: headingRef, inView: headingInView } = useInView<HTMLDivElement>({ rootMargin: "-10% 0px" });
+  const { ref: statsRef, inView: statsInView } = useInView<HTMLDivElement>({ rootMargin: "-8% 0px" });
+  const { ref: waitlistRef, inView: waitlistInView } = useInView<HTMLDivElement>({ rootMargin: "-6% 0px" });
+  const { ref: imageRef, inView: imageInView } = useInView<HTMLDivElement>({ rootMargin: "-20% 0px" });
+
   return (
     <section className="relative lg:min-h-screen overflow-hidden">
       {/* Gradient Background */}
@@ -44,7 +51,7 @@ function Hero() {
         <div className="max-w-6xl lg:mx-0 lg:ml-0">
           <div className="text-center lg:text-left space-y-6 md:space-y-8 lg:space-y-12 lg:max-w-4xl lg:mx-0">
             {/* Badge */}
-            <div className="flex justify-center lg:justify-start">
+            <div ref={headingRef} className={`flex justify-center lg:justify-start reveal ${headingInView ? "in-view" : ""} reveal-delay-100`}>
               <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/80 backdrop-blur-sm border border-blue-100 shadow-sm">
                 <div className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></div>
                 <span className="text-sm font-medium text-gray-700">
@@ -54,8 +61,8 @@ function Hero() {
             </div>
 
             {/* Hero Heading */}
-            <div className="space-y-6">
-              <h1 className="text-6xl sm:text-7xl md:[98px] font-semibold font-Poppins text-gray-900 leading-[1.1] tracking-tight">
+            <div className={`space-y-6 reveal ${headingInView ? "in-view" : ""} reveal-delay-200`}>
+              <h1 className="text-[105px] sm:text-7xl md:[98px] font-semibold font-Poppins text-gray-900 leading-[1.1] tracking-tight">
                 Find gadgets that suit{" "}
                 <span className="relative">
                   <span className="text-transparent bg-gradient-to-r from-[#2556bc] via-blue-600 to-purple-600 bg-clip-text">
@@ -67,13 +74,13 @@ function Hero() {
 
               <p className="text-lg sm:text-xl/snug text-gray-600 font-Be-Vietnam-Pro leading-relaxed max-w-2xl mx-auto lg:mx-0">
                 Our intelligent system eliminates the guesswork by analyzing
-                your unique needs and matching you to the perfect laptop in
+                your unique needs and matching you to the perfect device in
                 under 60 seconds.
               </p>
             </div>
 
             {/* Stats */}
-            <div className="flex flex-wrap justify-center lg:justify-start gap-6 sm:gap-8 py-4">
+            <div ref={statsRef} className={`flex flex-wrap justify-center lg:justify-start gap-6 sm:gap-8 py-4 reveal ${statsInView ? "in-view" : ""} reveal-delay-200`}>
               <div className="text-center lg:text-left">
                 <div className="text-2xl sm:text-3xl font-bold text-[#2556bc]">
                   10K+
@@ -97,7 +104,8 @@ function Hero() {
             {/* Waitlist Form */}
             <div
               id="waitlist"
-              className="bg-white backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/20 shadow-xl max-w-md mx-auto lg:mx-0 hover:scale-[1.04] transition-all duration-200"
+              ref={waitlistRef}
+              className={`bg-white backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/20 shadow-xl max-w-md mx-auto lg:mx-0 hover:scale-[1.04] transition-all duration-200 reveal-scale ${waitlistInView ? "in-view" : ""}`}
             >
               <div className="space-y-6">
                 <div className="space-y-2">
@@ -170,7 +178,7 @@ function Hero() {
 
         {/* Hero Image visible only on desktop */}
         <div className="hidden lg:flex lg:items-stretch lg:justify-end lg:h-full">
-          <div className="relative w-full max-w-2xl xl:max-w-3xl flex items-center">
+          <div ref={imageRef} className={`relative w-full max-w-2xl xl:max-w-3xl flex items-center reveal-scale ${imageInView ? "in-view" : ""}`}>
             <img
               src="/macbook3.webp"
               alt="Perfect laptop match for your needs"

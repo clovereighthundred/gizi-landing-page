@@ -1,0 +1,35 @@
+/* Scroll reveal utilities */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity .6s cubic-bezier(.2,.8,.2,1), transform .6s cubic-bezier(.2,.8,.2,1);
+}
+
+.reveal.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-scale {
+  opacity: 0;
+  transform: translateY(20px) scale(.98);
+  transition: opacity .6s cubic-bezier(.2,.8,.2,1), transform .6s cubic-bezier(.2,.8,.2,1);
+}
+.reveal-scale.in-view {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.reveal-delay-100 { transition-delay: .06s; }
+.reveal-delay-200 { transition-delay: .12s; }
+.reveal-delay-300 { transition-delay: .18s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal, .reveal.in-view, .reveal-scale, .reveal-scale.in-view {
+    transition: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+    animation: none !important;
+  }
+}

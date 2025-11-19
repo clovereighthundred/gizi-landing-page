@@ -1,13 +1,18 @@
 import { Button } from "./ui/button";
+import { useInView } from "@/lib/useInView";
+import "@/lib/scrollAnimations.css";
 
 function Solution() {
+  const { ref: headingRef, inView: headingInView } = useInView<HTMLDivElement>({ rootMargin: "-12% 0px" });
+  const { ref: imageGroupRef, inView: imageGroupInView } = useInView<HTMLDivElement>({ rootMargin: "-10% 0px" });
+
   return (
     <section id="features" className="relative py-16 lg:py-24 bg-slate-50">
       {/* Gradient Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-white to-blue-50"></div>
       <div className="relative z-10 container mx-auto px-4 lg:px-8">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12 lg:mb-16 space-y-5">
+          <div ref={headingRef} className={`text-center mb-12 lg:mb-16 space-y-5 reveal ${headingInView ? "in-view" : ""} reveal-delay-100`}>
             <div className="my-4 lg:my-6 p-4">
               <Button className="text-xs font-medium rounded-xl font-Be-Vietnam-Pro text-white bg-sapphire transition-all duration-300">
                 HOW GIZI WORKS
@@ -26,7 +31,7 @@ function Solution() {
 
         <div className="space-y-16 lg:space-y-24">
           {/* Image + Card 1 */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6 items-center">
+          <div ref={imageGroupRef} className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6 items-center">
             <div className="order-2 lg:order-1">
               <div className="space-y-4">
                 <h3 className="text-2xl lg:text-4xl font-semibold text-gray-900 font-Be-Vietnam-Pro">
@@ -38,7 +43,7 @@ function Solution() {
                 </p>
               </div>
             </div>
-            <div className="order-1 lg:order-2">
+            <div className={`order-1 lg:order-2 reveal-scale ${imageGroupInView ? "in-view" : ""}`}>
               <div className="relative">
                 <img
                   src="/typing.jpg"
@@ -65,7 +70,7 @@ function Solution() {
                 </p>
               </div>
             </div>
-            <div className="order-1 lg:order-1">
+            <div className={`order-1 lg:order-1 reveal-scale ${imageGroupInView ? "in-view" : ""}`}>
               <div className="relative">
                 <img
                   src="/processing.jpg"
@@ -92,7 +97,7 @@ function Solution() {
                 </p>
               </div>
             </div>
-            <div className="order-1 lg:order-2">
+            <div className={`order-1 lg:order-2 reveal-scale ${imageGroupInView ? "in-view" : ""}`}>
               <div className="relative">
                 <img
                   src="/macbook5.jpg"
@@ -117,7 +122,7 @@ function Solution() {
                 </p>
               </div>
             </div>
-            <div className="order-1 lg:order-1">
+            <div className={`order-1 lg:order-1 reveal-scale ${imageGroupInView ? "in-view" : ""}`}>
               <div className="relative">
                 <img
                   src="/payment.jpg"

@@ -1,24 +1,29 @@
 import { Cpu, DollarSign, Clock, HelpCircle } from "lucide-react";
+import { useInView } from "@/lib/useInView";
+import "@/lib/scrollAnimations.css";
 
 function Problem() {
+  const { ref: headingRef, inView: headingInView } = useInView<HTMLDivElement>({ rootMargin: "-12% 0px" });
+  const { ref: gridRef, inView: gridInView } = useInView<HTMLDivElement>({ rootMargin: "-8% 0px" });
+
   return (
     <section id="about" className="relative py-16 lg:py-24">
       {/* Background Gradient */}
       <div className="absolute inset-0 bg-gradient-to-bl from-slate-50 via-white to-[#5d2de6]/12"></div>
       <div className="relative z-10 container mx-auto px-4 lg:px-8">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12 lg:mb-16 space-y-4">
+          <div ref={headingRef} className={`text-center mb-12 lg:mb-16 space-y-4 reveal ${headingInView ? "in-view" : ""} reveal-delay-100`}>
             <h2 className="text-black font-Poppins font-medium text-4xl lg:text-6xl tracking-tight">
-              Laptop shopping shouldn't feel like rocket science.
+              Tech shopping shouldn't feel like rocket science.
             </h2>
             <p className="text-gray-600 font-Be-Vietnam-Pro text-base lg:text-[22px]">
-              We get it. Finding the right laptop has become impossibly
+              We get it. Finding the right device for your needs has become impossibly
               complicated.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            <div className="bg-columbia-blue p-6 lg:p-8 rounded-3xl min-h-[200px] lg:justify-center lg:m-4 flex flex-col">
+          <div ref={gridRef} className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div className={`bg-columbia-blue p-6 lg:p-8 rounded-3xl min-h-[200px] lg:justify-center lg:m-4 flex flex-col reveal-scale ${gridInView ? "in-view" : ""}`}>
               <div className="flex items-center justify-center w-12 h-12 rounded-full bg-[#030303] text-columbia-blue mb-4">
                 <Cpu className="w-6 h-6" />
               </div>
@@ -30,8 +35,7 @@ function Problem() {
                 confusing models with similar-sounding names and specs.
               </p>
             </div>
-
-            <div className="bg-columbia-blue p-6 lg:p-8 rounded-3xl min-h-[200px] lg:justify-center lg:m-4 flex flex-col">
+            <div className={`bg-columbia-blue p-6 lg:p-8 rounded-3xl min-h-[200px] lg:justify-center lg:m-4 flex flex-col reveal-scale ${gridInView ? "in-view" : ""}`}>
               <div className="flex items-center justify-center w-12 h-12 rounded-full bg-[#030303] text-columbia-blue mb-4">
                 <HelpCircle className="w-6 h-6" />
               </div>
@@ -43,8 +47,7 @@ function Problem() {
                 laptop require an engineering degree?
               </p>
             </div>
-
-            <div className="bg-columbia-blue p-6 lg:p-8 rounded-3xl min-h-[200px] lg:justify-center lg:m-4 flex flex-col">
+            <div className={`bg-columbia-blue p-6 lg:p-8 rounded-3xl min-h-[200px] lg:justify-center lg:m-4 flex flex-col reveal-scale ${gridInView ? "in-view" : ""}`}>
               <div className="flex items-center justify-center w-12 h-12 rounded-full bg-[#030303] text-columbia-blue mb-4">
                 <Clock className="w-6 h-6" />
               </div>
@@ -56,8 +59,7 @@ function Problem() {
                 reading forums—only to feel more confused than when you started.
               </p>
             </div>
-
-            <div className="bg-columbia-blue p-6 lg:p-8 rounded-3xl min-h-[200px] lg:justify-center lg:m-4 flex flex-col">
+            <div className={`bg-columbia-blue p-6 lg:p-8 rounded-3xl min-h-[200px] lg:justify-center lg:m-4 flex flex-col reveal-scale ${gridInView ? "in-view" : ""}`}>
               <div className="flex items-center justify-center w-12 h-12 rounded-full bg-[#030303] text-columbia-blue mb-4">
                 <DollarSign className="w-6 h-6" />
               </div>

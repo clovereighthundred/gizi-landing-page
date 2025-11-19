@@ -1,13 +1,17 @@
 import { Brain, Rocket, Target, Zap } from "lucide-react";
+import { useInView } from "@/lib/useInView";
+import "@/lib/scrollAnimations.css";
 
 function Benefits() {
+  const { ref: headingRef, inView: headingInView } = useInView<HTMLDivElement>({ rootMargin: "-12% 0px" });
+
   return (
     <section id="benefits" className="relative py-16 lg:py-24 bg-[#f5f5f5]">
       <div className="absolute inset-0 bg-gradient-to-bl from-slate-50 via-white to-[#5d2de6]/12"></div>
       <div className="relative z-10 container mx-auto px-4 lg:px-8">
         <div className="max-w-6xl mx-auto">
           {/* Heading and subheading */}
-          <div className="text-center mb-12 lg:mb-16 space-y-4">
+          <div ref={headingRef} className={`text-center mb-12 lg:mb-16 space-y-4 reveal ${headingInView ? "in-view" : ""} reveal-delay-100`}>
             <h2 className="text-black font-Poppins font-medium text-4xl lg:text-6xl tracking-tight">
               Why modern users trust our approach.
             </h2>
@@ -16,6 +20,7 @@ function Benefits() {
               lifestyle — not just your budget.
             </p>
           </div>
+
 
           <div className="space-y-16 lg:space-y-24">
             <div className="flex justify-center px-4">
