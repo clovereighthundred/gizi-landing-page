@@ -10,17 +10,16 @@ function Solution() {
           <div className="text-center mb-12 lg:mb-16 space-y-5">
             <div className="my-4 lg:my-6 p-4">
               <Button className="text-xs font-medium rounded-xl font-Be-Vietnam-Pro text-white bg-sapphire transition-all duration-300">
-                HOW IT WORKS
+                HOW GIZI WORKS
               </Button>
             </div>
             <h2 className="text-black font-Poppins font-medium text-4xl lg:text-6xl tracking-tight">
-              Meet the smarter way to purchase your next laptop.
+              Meet the smarter way to purchase your tech.
             </h2>
             <p className="text-gray-600 font-Be-Vietnam-Pro text-base lg:text-[20px]">
-              No more spec overload. No more wasted money. Our algorithm
-              analyzes your unique needs — whether you're a designer,
-              programmer, gamer, or student — and recommends the laptop that's{" "}
-              <span className="italic">actually</span> built for you.
+              We analyze your actual needs — whether you design, code, game, or
+              study — and match you with the device{" "}
+              <span className="italic">truly</span> built for you.
             </p>
           </div>
         </div>
@@ -34,9 +33,8 @@ function Solution() {
                   Tell us what matters
                 </h3>
                 <p className="text-gray-600 text-lg lg:text-[20px] leading-normal font-Be-Vietnam-Pro">
-                  Answer a few smart questions about how you'll actually use
-                  your laptop. No technical knowledge required—we speak human,
-                  not spec-sheet.
+                  Tell us what kind of tech you're looking for. No technical
+                  knowledge required — we speak human, not spec-sheet.
                 </p>
               </div>
             </div>
@@ -61,7 +59,7 @@ function Solution() {
                   AI does the heavy lifting
                 </h3>
                 <p className="text-gray-600 text-lg lg:text-[20px] leading-normal font-Be-Vietnam-Pro">
-                  Our machine learning algorithm analyzes thousands of laptops
+                  Our machine learning algorithm analyzes thousands of products
                   across performance benchmarks, real-world reviews, and
                   compatibility factors you'd never think to check.
                 </p>
@@ -88,9 +86,9 @@ function Solution() {
                   Get personalized results
                 </h3>
                 <p className="text-gray-600 text-lg lg:text-[20px] leading-normal font-Be-Vietnam-Pro">
-                  Receive a curated list of personalized recommendations with
-                  clear explanations of why each laptop fits your specific needs
-                  and budget.
+                  You get an array of personalized recommendations with clear
+                  explanations of why each device fits your specific needs and
+                  budget.
                 </p>
               </div>
             </div>
@@ -115,14 +113,14 @@ function Solution() {
                   Purchase your perfect fit
                 </h3>
                 <p className="text-gray-600 text-lg lg:text-[20px] leading-normal font-Be-Vietnam-Pro">
-                  Select your ideal laptop from our tailored list and complete your order with confidence
+                  Pick what works for you and check out with confidence.
                 </p>
               </div>
             </div>
             <div className="order-1 lg:order-1">
               <div className="relative">
                 <img
-                  src="/macbook5.jpg"
+                  src="/payment.jpg"
                   alt="Step 3 illustration"
                   className="w-full h-auto rounded-2xl shadow-lg max-w-2xl mx-auto
                   transform transition-all duration-300 

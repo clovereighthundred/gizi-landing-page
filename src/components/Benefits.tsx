@@ -9,12 +9,11 @@ function Benefits() {
           {/* Heading and subheading */}
           <div className="text-center mb-12 lg:mb-16 space-y-4">
             <h2 className="text-black font-Poppins font-medium text-4xl lg:text-6xl tracking-tight">
-              Why students and creators love our approach.
+              Why modern users trust our approach.
             </h2>
             <p className="text-gray-600 font-Be-Vietnam-Pro text-base lg:text-[22px]">
-              It's not about selling you the most expensive laptop. It's about
-              matching you with the one that perfectly fits your needs — saving
-              you stress, time, and money.
+              You get to skip the stress. Find the device that fits your
+              lifestyle — not just your budget.
             </p>
           </div>
 
@@ -25,7 +24,7 @@ function Benefits() {
               transform transition-all duration-300 hover:scale-102 hover:shadow-2xl"
               >
                 <div className="max-w-2xl mx-auto px-6">
-                  <div className="space-y-6">
+                  <div className="space-y-12">
                     <div className="flex items-start gap-4">
                       <div className="flex-shrink-0">
                         <Zap className="w-6 h-6 lg:w-8 lg:h-8 text-blue-500" />
@@ -35,7 +34,7 @@ function Benefits() {
                           Lightning Fast
                         </h3>
                         <p className="text-gray-600 text-base sm:text-lg lg:text-xl font-Be-Vietnam-Pro">
-                          60 seconds vs. 60 hours of research
+                          60 seconds vs. hours of research
                         </p>
                       </div>
                     </div>
@@ -49,7 +48,8 @@ function Benefits() {
                           Laser Accurate
                         </h3>
                         <p className="text-gray-600 text-base sm:text-lg lg:text-xl font-Be-Vietnam-Pro">
-                          Matches based on your actual usage, not marketing hype
+                          Based on your needs and preferences, we match you with
+                          products you can rely on, every time.
                         </p>
                       </div>
                     </div>
@@ -78,7 +78,8 @@ function Benefits() {
                           Stress-Free
                         </h3>
                         <p className="text-gray-600 text-base sm:text-lg lg:text-xl font-Be-Vietnam-Pro">
-                          No more analysis paralysis or buyer's remorse
+                          No more pressure. No more letdowns. Just confidence,
+                          comfort and a device that works for you.
                         </p>
                       </div>
                     </div>
