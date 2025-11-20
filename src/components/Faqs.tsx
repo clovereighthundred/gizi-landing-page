@@ -12,12 +12,12 @@ function Faqs() {
   const { ref: accordionRef, inView: accordionInView } = useInView<HTMLDivElement>({ rootMargin: "-8% 0px" });
   const faqs = [
     {
-      question: "How does the recommendation system work?",
+      question: "How does the buying agent work?",
       answer:
         "Our system analyzes your preferences, usage patterns, and requirements, then cross-references this data with our extensive database of products, expert reviews, and user feedback to provide personalized recommendations that best match your needs.",
     },
     {
-      question: "Will I only see one laptop recommendation?",
+      question: "Will I only see one recommendation?",
       answer:
         "No, you'll get a shortlist — and we'll clearly show the advantages of each option and how it relates to you, so you can choose with confidence.",
     },
