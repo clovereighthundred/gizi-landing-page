@@ -55,7 +55,7 @@ function Hero() {
               <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/80 backdrop-blur-sm border border-blue-100 shadow-sm">
                 <div className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></div>
                 <span className="text-sm font-medium text-gray-700">
-                  AI-Powered Matching
+                  Expert Buying Agent
                 </span>
               </div>
             </div>
@@ -73,9 +73,7 @@ function Hero() {
               </h1>
 
               <p className="text-lg sm:text-xl/snug text-gray-600 font-Be-Vietnam-Pro leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                Our intelligent system eliminates the guesswork by analyzing
-                your unique needs and matching you to the perfect device in
-                under 60 seconds.
+                With our intelligent buying agent, we learn your unique needs and lead you to the perfect device you can buy directly on our platform, all under 60 seconds.
               </p>
             </div>
 
