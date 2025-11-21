@@ -14,7 +14,7 @@ function Faqs() {
     {
       question: "How does the buying agent work?",
       answer:
-        "Our system analyzes your preferences, usage patterns, and requirements, then cross-references this data with our extensive database of products, expert reviews, and user feedback to provide personalized recommendations that best match your needs.",
+        "Our agent analyzes your preferences, usage patterns, and requirements, then cross-references this data with our extensive database of products, expert reviews, and user feedback to provide personalized recommendations that best match your needs.",
     },
     {
       question: "Will I only see one recommendation?",
