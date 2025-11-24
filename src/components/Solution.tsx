@@ -59,7 +59,7 @@ function Solution() {
             >
               <div className="relative">
                 <img
-                  src="/typing.jpg"
+                  src="/tuwm2.png"
                   alt="Step 1 illustration"
                   className="w-full h-auto rounded-2xl shadow-lg max-w-2xl mx-auto
                   transform transition-all duration-300 
@@ -90,7 +90,7 @@ function Solution() {
             >
               <div className="relative">
                 <img
-                  src="/processing.jpg"
+                  src="/aidthl1.png"
                   alt="Step 1 illustration"
                   className="w-full h-auto rounded-2xl shadow-lg max-w-2xl mx-auto
                   transform transition-all duration-300 
@@ -120,7 +120,7 @@ function Solution() {
             >
               <div className="relative">
                 <img
-                  src="/macbook5.jpg"
+                  src="/gpr2.jpg"
                   alt="Step 3 illustration"
                   className="w-full h-auto rounded-2xl shadow-lg max-w-2xl mx-auto
                   transform transition-all duration-300 
@@ -149,7 +149,7 @@ function Solution() {
             >
               <div className="relative">
                 <img
-                  src="/payment.jpg"
+                  src="/pypf.png"
                   alt="Step 3 illustration"
                   className="w-full h-auto rounded-2xl shadow-lg max-w-2xl mx-auto
                   transform transition-all duration-300 
