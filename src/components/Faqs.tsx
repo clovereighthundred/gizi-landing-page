@@ -19,18 +19,18 @@ function Faqs() {
     {
       question: "Will I only see one recommendation?",
       answer:
-        "No, you'll get a shortlist — and we'll clearly show the advantages of each option and how it relates to you, so you can choose with confidence.",
+        "No, you'll get a shortlist — and we'll clearly show how each product fits you, so you can choose with confidence.",
     },
     {
       question:
         "What makes your agent different from just Googling or watching reviews?",
       answer:
-        "Reviews and spec sheets can be overwhelming. Our system processes thousands of data points — real-world benchmarks, expert reviews, and performance insights — and translates them into clear, personalized recommendations tailored to you.",
+        "Reviews and spec sheets can be overwhelming. Gizi processes thousands of data points — real-world benchmarks, expert reviews, and performance insights, while letting you explain your needs in your own words — and translates them into clear, personalized recommendations tailored to you.",
     },
     {
       question: "Are the products shown available for purchase?",
       answer:
-        "Yes. Every device recommended on our platform is available for purchase and delivery, directly to you.",
+        "Yes. Every product recommended by our agent is available for purchase and delivery, directly to you.",
     },
     {
       question: "How do you protect my data?",
