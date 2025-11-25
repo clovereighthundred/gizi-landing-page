@@ -1,4 +1,4 @@
-import { Layers, Cpu, ShieldCheck, BarChart } from "lucide-react";
+import { DatabaseZap, Cpu, Gem, BarChart } from "lucide-react";
 import { useInView } from "@/lib/useInView";
 import "@/lib/scrollAnimations.css";
 
@@ -13,9 +13,14 @@ function ValueProp() {
 
       <div className="relative z-10 container mx-auto px-4 lg:px-8">
         <div className="max-w-6xl mx-auto text-center">
-          <div ref={headingRef} className={`mb-8 lg:mb-12 reveal ${headingInView ? "in-view" : ""} reveal-delay-100`}>
+          <div
+            ref={headingRef}
+            className={`mb-8 lg:mb-12 reveal ${
+              headingInView ? "in-view" : ""
+            } reveal-delay-100`}
+          >
             <h2 className="text-black font-Poppins font-medium text-4xl lg:text-6xl tracking-tight">
-              Why Gizi delivers better than generic AI
+              Gizi delivers better than generic AI
             </h2>
             <p className="mt-4 text-gray-600 font-Be-Vietnam-Pro text-base lg:text-[20px]">
               Real context. Real performance. Real recommendations.
@@ -24,78 +29,95 @@ function ValueProp() {
 
           <div
             ref={gridRef}
-            className={`flex flex-col md:flex-row md:flex-wrap lg:flex-nowrap gap-6 justify-center items-stretch`}
+            className="grid grid-cols-1 sm:grid-cols-2  gap-8 md:gap-10 place-items-center"
           >
             <div
-              className={`w-full max-w-xs md:w-80 lg:w-72 xl:w-64 box-border bg-white shadow-lg border border-gray-100 p-5 rounded-3xl reveal-scale ${
+              className={`w-full max-w-xs md:max-w-md lg:max-w-lg bg-white shadow-lg border border-gray-100 p-8 md:p-10 rounded-3xl reveal-scale ${
                 gridInView ? "in-view" : ""
-              } reveal-delay-100 min-h-[280px] flex flex-col justify-start`}
+              } reveal-delay-300 flex flex-col`}
             >
-              <div className="flex flex-col items-center text-center gap-3">
-                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center">
-                  <Layers className="w-6 h-6 text-blue-600" />
+              <div className="flex flex-col items-center text-center gap-6">
+                {" "}
+                {/* Card 1 */}
+                <div className="flex-shrink-0 w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center">
+                  <DatabaseZap className="w-7 h-7 text-green-500" />
                 </div>
-                <div className="flex-grow">
-                  <h3 className="text-lg font-semibold font-Be-Vietnam-Pro text-[#030303] mb-2">
-                    Real-World Context
+                <div className="space-y-3">
+                  <h3 className="text-xl md:text-2xl font-semibold font-Be-Vietnam-Pro text-[#030303]">
+                    Domain-specific performance database
                   </h3>
-                  <p className="text-gray-600 text-sm font-Be-Vietnam-Pro leading-relaxed hyphens-auto">
-                    Gizi uses contextual inputs — workload, preferences, and
-                    real usage signals — so recommendations are tailored to how
-                    you actually use your device, not just raw specs.
+                  <p className="text-gray-600 text-base md:text-lg font-Be-Vietnam-Pro leading-relaxed max-w-md mx-auto">
+                    We analyze real-world benchmarks, workflows and component
+                    interactions, not marketing claims.
                   </p>
                 </div>
               </div>
             </div>
 
-            <div className={`w-full max-w-xs md:w-80 lg:w-72 xl:w-64 box-border bg-white shadow-lg border border-gray-100 p-5 rounded-3xl reveal-scale ${gridInView ? "in-view" : ""} reveal-delay-200 min-h-[280px] flex flex-col justify-start`}>
-              <div className="flex flex-col items-center text-center gap-3">
-                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center">
-                  <Cpu className="w-6 h-6 text-sapphire" />
+            <div
+              className={`w-full max-w-xs md:max-w-md lg:max-w-lg bg-white shadow-lg border border-gray-100 p-8 md:p-10 rounded-3xl reveal-scale ${
+                gridInView ? "in-view" : ""
+              } reveal-delay-300 flex flex-col`}
+            >
+              <div className="flex flex-col items-center text-center gap-6">
+                {" "}
+                {/* Card 2 */}
+                <div className="flex-shrink-0 w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center">
+                  <Cpu className="w-7 h-7 text-blue-500" />
                 </div>
-                <div className="flex-grow">
-                  <h3 className="text-lg font-semibold font-Be-Vietnam-Pro text-[#030303] mb-2">
-                    Expert-Calibrated Models
+                <div className="space-y-3">
+                  <h3 className="text-xl md:text-2xl font-semibold font-Be-Vietnam-Pro text-[#030303]">
+                    Context translation engine
                   </h3>
-                  <p className="text-gray-600 text-sm font-Be-Vietnam-Pro leading-relaxed hyphens-auto">
-                    We combine ML with domain expertise — benchmarks and
-                    human validation ensure suggestions are practical and
-                    reliable for real tasks.
+                  <p className="text-gray-600 text-base md:text-lg font-Be-Vietnam-Pro leading-relaxed max-w-md mx-auto">
+                    Tell us what you want in your own words, and we translate
+                    your goals into technical requirements that actually matter.
                   </p>
                 </div>
               </div>
             </div>
 
-            <div className={`w-full max-w-xs md:w-80 lg:w-72 xl:w-64 box-border bg-white shadow-lg border border-gray-100 p-5 rounded-3xl reveal-scale ${gridInView ? "in-view" : ""} reveal-delay-300 min-h-[280px] flex flex-col justify-start`}>
-              <div className="flex flex-col items-center text-center gap-3">
-                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center">
-                  <ShieldCheck className="w-6 h-6 text-green-500" />
+            <div
+              className={`w-full max-w-xs md:max-w-md lg:max-w-lg bg-white shadow-lg border border-gray-100 p-8 md:p-10 rounded-3xl reveal-scale ${
+                gridInView ? "in-view" : ""
+              } reveal-delay-300 flex flex-col`}
+            >
+              <div className="flex flex-col items-center text-center gap-6">
+                {" "}
+                {/* Card 3 */}
+                <div className="flex-shrink-0 w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center">
+                  <Gem className="w-7 h-7 text-purple-500" />
                 </div>
-                <div className="flex-grow">
-                  <h3 className="text-lg font-semibold font-Be-Vietnam-Pro text-[#030303] mb-2">
-                    Transparent Recommendations
+                <div className="space-y-3">
+                  <h3 className="text-xl md:text-2xl font-semibold font-Be-Vietnam-Pro text-[#030303]">
+                    Persona-optimized matching
                   </h3>
-                  <p className="text-gray-600 text-sm font-Be-Vietnam-Pro leading-relaxed hyphens-auto">
-                    Every suggestion includes reasons and trade-offs so you can
-                    understand why a device was chosen — no black-box picks.
+                  <p className="text-gray-600 text-base md:text-lg font-Be-Vietnam-Pro leading-relaxed max-w-md mx-auto">
+                    Gizi matches every user to products based on their unique
+                    needs and preferences, not one-size-fits-all criteria.
                   </p>
                 </div>
               </div>
             </div>
 
-            <div className={`w-full max-w-xs md:w-80 lg:w-72 xl:w-64 box-border bg-white shadow-lg border border-gray-100 p-5 rounded-3xl reveal-scale ${gridInView ? "in-view" : ""} reveal-delay-300 min-h-[280px] flex flex-col justify-start`}>
-              <div className="flex flex-col items-center text-center gap-3">
-                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center">
-                  <BarChart className="w-6 h-6 text-purple-600" />
+            <div
+              className={`w-full max-w-xs md:max-w-md lg:max-w-lg bg-white shadow-lg border border-gray-100 p-8 md:p-10 rounded-3xl reveal-scale ${
+                gridInView ? "in-view" : ""
+              } reveal-delay-300 flex flex-col`}
+            >
+              <div className="flex flex-col items-center text-center gap-6">
+                {" "}
+                {/* Card 4 */}
+                <div className="flex-shrink-0 w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center">
+                  <BarChart className="w-7 h-7 text-orange-500" />
                 </div>
-                <div className="flex-grow">
-                  <h3 className="text-lg font-semibold font-Be-Vietnam-Pro text-[#030303] mb-2">
-                    Continuous Improvement
+                <div className="space-y-3">
+                  <h3 className="text-xl md:text-2xl font-semibold font-Be-Vietnam-Pro text-[#030303]">
+                    Real-world performance, not theoretical specs.
                   </h3>
-                  <p className="text-gray-600 text-sm font-Be-Vietnam-Pro leading-relaxed hyphens-auto">
-                    Recommendations learn from real feedback and live data,
-                    improving over time so results stay accurate as hardware
-                    and workloads evolve.
+                  <p className="text-gray-600 text-base md:text-lg font-Be-Vietnam-Pro leading-relaxed max-w-md mx-auto">
+                    Our agent picks the device that performs best for your
+                    actual use case, based on field-tested impact.
                   </p>
                 </div>
               </div>
