@@ -5,6 +5,7 @@
 import Hero from "./Hero";
 import Problem from "./Problem";
 import Solution from "./Solution";
+import ValueProp from "./ValueProp";
 import Benefits from "./Benefits";
 import Faqs from "./Faqs";
 import Footer from "./Footer";
@@ -19,6 +20,7 @@ function Homepage() {
       <Problem />
       <Solution />
       <Benefits />
+      <ValueProp />
       <Faqs />
       <Footer />
     </div>
