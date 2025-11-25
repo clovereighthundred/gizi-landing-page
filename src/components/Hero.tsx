@@ -63,7 +63,7 @@ function Hero() {
             {/* Hero Heading */}
             <div className={`space-y-6 reveal ${headingInView ? "in-view" : ""} reveal-delay-200`}>
               <h1 className="text-[105px] sm:text-7xl md:[98px] font-semibold font-Poppins text-gray-900 leading-[1.1] tracking-tight">
-                Find gadgets that suit{" "}
+                Find devices that suit{" "}
                 <span className="relative">
                   <span className="text-transparent bg-gradient-to-r from-[#2556bc] via-blue-600 to-purple-600 bg-clip-text">
                     your needs

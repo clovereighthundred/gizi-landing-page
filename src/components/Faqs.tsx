@@ -23,7 +23,7 @@ function Faqs() {
     },
     {
       question:
-        "What makes your agent different from just Googling or watching reviews?",
+        "What makes your agent different from using generic AI or watching reviews?",
       answer:
         "Reviews and spec sheets can be overwhelming. Gizi processes thousands of data points — real-world benchmarks, expert reviews, and performance insights, while letting you explain your needs in your own words — and translates them into clear, personalized recommendations tailored to you.",
     },
