@@ -73,7 +73,7 @@ function Hero() {
               </h1>
 
               <p className="text-lg sm:text-xl/snug text-gray-600 font-Be-Vietnam-Pro leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                Our buying agent learns your unique needs and guides you to the perfect device you can buy directly on our platform, all under 60 seconds.
+                Our buying agent learns your unique needs and guides you to the perfect device you can buy directly from the web, all under 60 seconds.
               </p>
             </div>
 
