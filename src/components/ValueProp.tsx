@@ -34,7 +34,13 @@ function ValueProp() {
             <div
               className={`w-full max-w-xs md:max-w-md lg:max-w-lg bg-white shadow-lg border border-gray-100 p-8 md:p-10 rounded-3xl reveal-scale ${
                 gridInView ? "in-view" : ""
-              } reveal-delay-300 flex flex-col`}
+              } reveal-delay-300 flex flex-col
+                group cursor-pointer
+                transition-all duration-500 ease-out
+                hover:shadow-[0_0_40px_rgba(59,130,246,0.3)]
+                hover:-translate-y-1
+                hover:scale-[1.02]
+              `}
             >
               <div className="flex flex-col items-center text-center gap-6">
                 {" "}
@@ -57,7 +63,13 @@ function ValueProp() {
             <div
               className={`w-full max-w-xs md:max-w-md lg:max-w-lg bg-white shadow-lg border border-gray-100 p-8 md:p-10 rounded-3xl reveal-scale ${
                 gridInView ? "in-view" : ""
-              } reveal-delay-300 flex flex-col`}
+              } reveal-delay-300 flex flex-col
+                group cursor-pointer
+                transition-all duration-500 ease-out
+                hover:shadow-[0_0_40px_rgba(59,130,246,0.3)]
+                hover:-translate-y-1
+                hover:scale-[1.02]
+              `}
             >
               <div className="flex flex-col items-center text-center gap-6">
                 {" "}
@@ -80,7 +92,13 @@ function ValueProp() {
             <div
               className={`w-full max-w-xs md:max-w-md lg:max-w-lg bg-white shadow-lg border border-gray-100 p-8 md:p-10 rounded-3xl reveal-scale ${
                 gridInView ? "in-view" : ""
-              } reveal-delay-300 flex flex-col`}
+              } reveal-delay-300 flex flex-col
+                group cursor-pointer
+                transition-all duration-500 ease-out
+                hover:shadow-[0_0_40px_rgba(59,130,246,0.3)]
+                hover:-translate-y-1
+                hover:scale-[1.02]
+              `}
             >
               <div className="flex flex-col items-center text-center gap-6">
                 {" "}
@@ -103,7 +121,13 @@ function ValueProp() {
             <div
               className={`w-full max-w-xs md:max-w-md lg:max-w-lg bg-white shadow-lg border border-gray-100 p-8 md:p-10 rounded-3xl reveal-scale ${
                 gridInView ? "in-view" : ""
-              } reveal-delay-300 flex flex-col`}
+              } reveal-delay-300 flex flex-col
+                group cursor-pointer
+                transition-all duration-500 ease-out
+                hover:shadow-[0_0_40px_rgba(59,130,246,0.3)]
+                hover:-translate-y-1
+                hover:scale-[1.02]
+              `}
             >
               <div className="flex flex-col items-center text-center gap-6">
                 {" "}
