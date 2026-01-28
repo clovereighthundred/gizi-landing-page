@@ -24,14 +24,14 @@ const NavLinks = () => {
         href="#about"
         className="font-Be-Vietnam-Pro text-[16px] font-semibold text-black hover:text-[#2556bc] px-3 py-3 sm:py-2 transition-colors duration-200 block border-b border-gray-100 sm:border-none last:border-none"
       >
-        About
+        Challenges
       </a>
       <a
         onClick={handleScroll}
         href="#features"
         className=" font-Be-Vietnam-Pro text-[16px] font-semibold text-black hover:text-[#2556bc] px-3 py-3 sm:py-2 transition-colors duration-200 block border-b border-gray-100 sm:border-none last:border-none"
       >
-        Features
+        Product
       </a>
       <a
         onClick={handleScroll}
