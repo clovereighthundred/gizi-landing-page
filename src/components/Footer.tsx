@@ -14,14 +14,17 @@ const Footer = () => {
     <footer className="relative bg-white border-t border-gray-100">
       <div className="absolute inset-0 bg-gradient-to-bl from-slate-50 via-white to-[#5d2de6]/12"></div>
       <div className="relative z-10 mx-auto max-w-screen-xl px-4 pt-20 pb-8 sm:px-4 lg:px-6 lg:pt-28">
-        <div ref={mainRef} className={`text-center reveal ${mainInView ? "in-view" : ""} reveal-delay-100`}>
+        <div
+          ref={mainRef}
+          className={`text-center reveal ${mainInView ? "in-view" : ""} reveal-delay-100`}
+        >
           <h2 className="text-black font-Poppins font-medium text-4xl lg:text-6xl tracking-tight">
             Get early access today.
           </h2>
 
           <p className="mx-auto mt-6 max-w-md text-base lg:text-lg text-gray-600 font-Be-Vietnam-Pro">
-            Get behind the scenes updates and be the first to know when we
-            launch.
+            We are pre-launch and building our first public version, expected in
+            Q2 2026.
           </p>
 
           <a href="#waitlist">
@@ -32,7 +35,10 @@ const Footer = () => {
           </a>
         </div>
 
-        <div ref={linksRef} className={`mt-20 border-t border-gray-200 pt-8 sm:flex sm:items-center sm:justify-between lg:mt-28 reveal-scale ${linksInView ? "in-view" : ""}`}>
+        <div
+          ref={linksRef}
+          className={`mt-20 border-t border-gray-200 pt-8 sm:flex sm:items-center sm:justify-between lg:mt-28 reveal-scale ${linksInView ? "in-view" : ""}`}
+        >
           <ul className="flex flex-wrap justify-center gap-6 text-sm lg:justify-start">
             <li>
               <a
@@ -63,7 +69,7 @@ const Footer = () => {
           <ul className="mt-8 flex justify-center gap-4 sm:mt-0 lg:justify-end">
             <li>
               <a
-                href="https://www.instagram.com/gizigadgets?utm_source=ig_web_button_share_sheet&igsh=OWY1YjJyZ2IyY2py"
+                href="/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -106,9 +112,12 @@ const Footer = () => {
         </div>
 
         {/* Copyright */}
-        <div ref={copyrightRef} className={`mt-8 pt-6 border-t border-gray-100 text-center reveal ${copyrightInView ? "in-view" : ""}`}>
+        <div
+          ref={copyrightRef}
+          className={`mt-8 pt-6 border-t border-gray-100 text-center reveal ${copyrightInView ? "in-view" : ""}`}
+        >
           <p className="text-sm text-gray-500">
-            © 2025 Gizi. All rights reserved.
+            © 2026 Gizi. All rights reserved.
           </p>
         </div>
       </div>
