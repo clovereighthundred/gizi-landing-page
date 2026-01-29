@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 
@@ -19,34 +20,41 @@ const NavLinks = () => {
 
   return (
     <>
-      <a
+      <Link
+        // onClick={handleScroll}
+        to="/company"
+        className="font-Be-Vietnam-Pro text-[16px] font-semibold text-black hover:text-[#2556bc] px-3 py-3 sm:py-2 transition-colors duration-200 block border-b border-gray-100 sm:border-none last:border-none"
+      >
+        About
+      </Link>
+      <Link
         onClick={handleScroll}
-        href="#about"
+        to="#problem"
         className="font-Be-Vietnam-Pro text-[16px] font-semibold text-black hover:text-[#2556bc] px-3 py-3 sm:py-2 transition-colors duration-200 block border-b border-gray-100 sm:border-none last:border-none"
       >
         Challenges
-      </a>
-      <a
+      </Link>
+      <Link
         onClick={handleScroll}
-        href="#features"
+        to="#features"
         className=" font-Be-Vietnam-Pro text-[16px] font-semibold text-black hover:text-[#2556bc] px-3 py-3 sm:py-2 transition-colors duration-200 block border-b border-gray-100 sm:border-none last:border-none"
       >
         Product
-      </a>
-      <a
+      </Link>
+      <Link
         onClick={handleScroll}
-        href="#benefits"
+        to="#benefits"
         className="font-Be-Vietnam-Pro text-[16px] font-semibold text-black hover:text-[#2556bc] px-3 py-3 sm:py-2 transition-colors duration-200 block border-b border-gray-100 sm:border-none last:border-none"
       >
         Benefits
-      </a>
-      <a
+      </Link>
+      <Link
         onClick={handleScroll}
-        href="#faqs"
+        to="#faqs"
         className="font-Be-Vietnam-Pro text-[16px] font-semibold text-black hover:text-[#2556bc] px-3 py-3 sm:py-2 transition-colors duration-200 block border-b border-gray-100 sm:border-none last:border-none"
       >
         FAQs
-      </a>
+      </Link>
     </>
   );
 };
@@ -66,14 +74,14 @@ const Navbar = () => {
           <NavLinks />
 
           {/* Waitlist Button */}
-          <a href="#waitlist">
+          <Link to="#waitlist">
             <Button
               variant="outline"
               className="ml-6 p-4 font-Be-Vietnam-Pro text-[17px] text-[#2556bc] border-[#2556bc] hover:bg-[#2556bc] hover:text-white transition-colors duration-200"
             >
               Join Waitlist
             </Button>
-          </a>
+          </Link>
         </div>
 
         {/* Mobile Navigation Button*/}
