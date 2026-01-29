@@ -7,7 +7,7 @@ function Problem() {
   const { ref: gridRef, inView: gridInView } = useInView<HTMLDivElement>({ rootMargin: "-8% 0px" });
 
   return (
-    <section id="about" className="relative py-16 lg:py-24">
+    <section id="problem" className="relative py-16 lg:py-24">
       {/* Background Gradient */}
       <div className="absolute inset-0 bg-gradient-to-bl from-slate-50 via-white to-[#5d2de6]/12"></div>
       <div className="relative z-10 container mx-auto px-4 lg:px-8">
