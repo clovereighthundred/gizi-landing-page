@@ -64,15 +64,19 @@ const Footer = () => {
                 Cookies
               </a>
             </li>
+            <li>
+              <a
+                href="/company"
+                className="text-gray-600 hover:text-gray-900 transition-colors duration-200"
+              >
+                Company
+              </a>
+            </li>
           </ul>
 
           <ul className="mt-8 flex justify-center gap-4 sm:mt-0 lg:justify-end">
             <li>
-              <a
-                href="/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="/" target="_blank" rel="noopener noreferrer">
                 <img
                   src={InstagramIcon}
                   alt="Instagram"
