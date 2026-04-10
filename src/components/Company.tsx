@@ -45,15 +45,24 @@ const Company = () => {
                       <img
                         src="/mark.jpg"
                         alt="Markanthony Oboh - Founder"
-                        className="w-full h-auto object-cover"
+                        className="w-full object-cover object-top"
                       />
                       <div className="p-4 text-center">
                         <h3 className="text-xl font-semibold font-Be-Vietnam-Pro mb-2">
                           Markanthony Oboh
                         </h3>
-                        <p className="text-gray-600 font-Be-Vietnam-Pro">
+                        <p className="text-gray-600 text-sm font-Be-Vietnam-Pro">
                           Founder | ML Engineer | CS @ Covenant University
                         </p>
+                        <a
+                          href="https://www.linkedin.com/in/markanthonyoboh/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <p className="text-xs text-sapphire font-Poppins mt-2">
+                            LinkedIn
+                          </p>
+                        </a>
                       </div>
                     </div>
 
@@ -61,16 +70,25 @@ const Company = () => {
                       <img
                         src="/fela.jpg"
                         alt="Adegbokun Adefela - Co-founder"
-                        className="w-full h-auto object-cover"
+                        className="w-full object-cover object-top"
                       />
                       <div className="p-4 text-center">
                         <h3 className="text-xl font-semibold font-Be-Vietnam-Pro mb-2">
                           Adefela Adegbokun
                         </h3>
-                        <p className="text-gray-600 font-Be-Vietnam-Pro">
-                          Co-founder | Frontend Engineer & Designer | MIS @
-                          Covenant University
+                        <p className="text-gray-600 text-sm font-Be-Vietnam-Pro">
+                          Co-founder | Frontend Engineer | MIS @ Covenant
+                          University
                         </p>
+                        <a
+                          href="https://www.linkedin.com/in/adefela-adegbokun"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <p className="text-xs text-sapphire font-Poppins mt-2">
+                            LinkedIn
+                          </p>
+                        </a>
                       </div>
                     </div>
 
@@ -78,15 +96,24 @@ const Company = () => {
                       <img
                         src="/pseudoayo.jpg"
                         alt="Ayodeji Amusan - Backend Developer"
-                        className="w-full h-auto object-cover"
+                        className="w-full object-cover object-top"
                       />
                       <div className="p-4 text-center">
                         <h3 className="text-xl font-semibold font-Be-Vietnam-Pro mb-2">
                           Ayodeji Amusan
                         </h3>
-                        <p className="text-gray-600 font-Be-Vietnam-Pro">
+                        <p className="text-gray-600 text-sm font-Be-Vietnam-Pro">
                           Backend Developer | CS @ Covenant University
                         </p>
+                        <a
+                          href="https://www.linkedin.com/in/ayodeji-amusan-4a526b219/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <p className="text-xs text-sapphire font-Poppins mt-2">
+                            LinkedIn
+                          </p>
+                        </a>
                       </div>
                     </div>
 
@@ -94,15 +121,24 @@ const Company = () => {
                       <img
                         src="/ola.jpeg"
                         alt="Olaoluwa Oyeniran - AI Engineer"
-                        className="w-full h-auto object-cover"
+                        className="w-full object-cover object-top"
                       />
                       <div className="p-4 text-center">
                         <h3 className="text-xl font-semibold font-Be-Vietnam-Pro mb-2">
                           Olaoluwa Oyeniran
                         </h3>
-                        <p className="text-gray-600 font-Be-Vietnam-Pro">
+                        <p className="text-gray-600 text-sm font-Be-Vietnam-Pro">
                           AI Engineer | MIS @ Covenant University
                         </p>
+                        <a
+                          href="https://www.linkedin.com/in/oyeniran-olaoluwa-a54772316"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <p className="text-xs text-sapphire font-Poppins mt-2">
+                            LinkedIn
+                          </p>
+                        </a>
                       </div>
                     </div>
                   </div>
