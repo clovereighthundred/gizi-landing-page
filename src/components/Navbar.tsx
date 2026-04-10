@@ -23,35 +23,35 @@ const NavLinks = () => {
       <Link
         // onClick={handleScroll}
         to="/company"
-        className="font-Be-Vietnam-Pro text-[16px] font-semibold text-black hover:text-[#2556bc] px-3 py-3 sm:py-2 transition-colors duration-200 block border-b border-gray-100 sm:border-none last:border-none"
+        className="font-Be-Vietnam-Pro text-[16px] font-semibold text-black hover:text-sapphire px-3 py-3 sm:py-2 transition-colors duration-200 block border-b border-gray-100 sm:border-none last:border-none"
       >
         About
       </Link>
       <Link
         onClick={handleScroll}
         to="#problem"
-        className="font-Be-Vietnam-Pro text-[16px] font-semibold text-black hover:text-[#2556bc] px-3 py-3 sm:py-2 transition-colors duration-200 block border-b border-gray-100 sm:border-none last:border-none"
+        className="font-Be-Vietnam-Pro text-[16px] font-semibold text-black hover:text-sapphire px-3 py-3 sm:py-2 transition-colors duration-200 block border-b border-gray-100 sm:border-none last:border-none"
       >
         Challenges
       </Link>
       <Link
         onClick={handleScroll}
         to="#features"
-        className=" font-Be-Vietnam-Pro text-[16px] font-semibold text-black hover:text-[#2556bc] px-3 py-3 sm:py-2 transition-colors duration-200 block border-b border-gray-100 sm:border-none last:border-none"
+        className=" font-Be-Vietnam-Pro text-[16px] font-semibold text-black hover:text-sapphire px-3 py-3 sm:py-2 transition-colors duration-200 block border-b border-gray-100 sm:border-none last:border-none"
       >
         Product
       </Link>
       <Link
         onClick={handleScroll}
         to="#benefits"
-        className="font-Be-Vietnam-Pro text-[16px] font-semibold text-black hover:text-[#2556bc] px-3 py-3 sm:py-2 transition-colors duration-200 block border-b border-gray-100 sm:border-none last:border-none"
+        className="font-Be-Vietnam-Pro text-[16px] font-semibold text-black hover:text-sapphire px-3 py-3 sm:py-2 transition-colors duration-200 block border-b border-gray-100 sm:border-none last:border-none"
       >
         Benefits
       </Link>
       <Link
         onClick={handleScroll}
         to="#faqs"
-        className="font-Be-Vietnam-Pro text-[16px] font-semibold text-black hover:text-[#2556bc] px-3 py-3 sm:py-2 transition-colors duration-200 block border-b border-gray-100 sm:border-none last:border-none"
+        className="font-Be-Vietnam-Pro text-[16px] font-semibold text-black hover:text-sapphire px-3 py-3 sm:py-2 transition-colors duration-200 block border-b border-gray-100 sm:border-none last:border-none"
       >
         FAQs
       </Link>
@@ -74,12 +74,12 @@ const Navbar = () => {
           <NavLinks />
 
           {/* Waitlist Button */}
-          <Link to="#waitlist">
+          <Link to="https://app.gizi.app" target="_blank" rel="noopener noreferrer">
             <Button
               variant="outline"
-              className="ml-6 p-4 font-Be-Vietnam-Pro text-[17px] text-[#2556bc] border-[#2556bc] hover:bg-[#2556bc] hover:text-white transition-colors duration-200"
+              className="ml-6 p-4 font-Be-Vietnam-Pro text-[17px] text-sapphire border-sapphire hover:bg-sapphire hover:text-white transition-colors duration-200"
             >
-              Join Waitlist
+              Try Demo
             </Button>
           </Link>
         </div>
@@ -89,7 +89,7 @@ const Navbar = () => {
           <Button
             variant="ghost"
             onClick={toggleNavbar}
-            className="p-2 text-black hover:text-[#2556bc] transition-colors duration-200"
+            className="p-2 text-black hover:text-sapphire transition-colors duration-200"
             aria-label="Toggle navigation menu"
           >
             {isOpen ? (

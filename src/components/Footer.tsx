@@ -12,8 +12,8 @@ const Footer = () => {
 
   return (
     <footer className="relative bg-white border-t border-gray-100">
-      <div className="absolute inset-0 bg-gradient-to-bl from-slate-50 via-white to-[#5d2de6]/12"></div>
-      <div className="relative z-10 mx-auto max-w-screen-xl px-4 pt-20 pb-8 sm:px-4 lg:px-6 lg:pt-28">
+      <div className="absolute inset-0 bg-linear-to-bl from-slate-50 via-white to-electric-indigo/12"></div>
+      <div className="relative z-10 mx-auto max-w-7xl px-4 pt-20 pb-8 sm:px-4 lg:px-6 lg:pt-28">
         <div
           ref={mainRef}
           className={`text-center reveal ${mainInView ? "in-view" : ""} reveal-delay-100`}
@@ -27,9 +27,9 @@ const Footer = () => {
             Q2 2026.
           </p>
 
-          <a href="#waitlist">
+          <a href="https://app.gizi.app" target="_blank" rel="noopener noreferrer">
             <button className="mt-8 inline-flex items-center gap-2 rounded-full bg-blue-600 px-8 py-4 text-sm font-semibold text-white hover:bg-blue-700 transition-colors duration-200 shadow-lg hover:shadow-xl">
-              Join the Waitlist
+              Try demo
               <ArrowRight className="w-4 h-4" />
             </button>
           </a>
