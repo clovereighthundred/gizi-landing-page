@@ -3,7 +3,7 @@ import Navbar from "./Navbar.tsx";
 
 function Header() {
   return (
-    <header className="bg-white sticky top-0 flex-wrap z-[20] mx-auto flex w-full items-center justify-between border-b p-4 md:p-8">
+    <header className="bg-white sticky top-0 flex-wrap z-20 mx-auto flex w-full items-center justify-between border-b p-4 md:p-8">
       <Link
         to="/"
         className="flex items-center space-x-2 hover:opacity-90 transition-opacity duration-200"

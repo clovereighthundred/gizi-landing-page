@@ -39,19 +39,22 @@ function Hero() {
   return (
     <section className="relative lg:min-h-screen overflow-hidden">
       {/* Gradient Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-white to-blue-50"></div>
+      <div className="absolute inset-0 bg-linear-to-br from-slate-50 via-white to-blue-50"></div>
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 left-10 w-72 h-72 bg-blue-100/30 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-purple-100/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-blue-50/10 to-purple-50/10 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-150 h-150 bg-linear-to-r from-blue-50/10 to-purple-50/10 rounded-full blur-3xl"></div>
       </div>
       {/* Main Content */}
       <div className="relative z-10 mx-0 md:mx-0 px-4 sm:px-6 lg:px-0 pt-4 sm:pt-12 lg:pt-10 pb-8 sm:pb-10 md:pb-12 lg:pb-24 lg:pl-8 xl:pl-16 lg:grid lg:grid-cols-2 lg:gap-6">
         <div className="max-w-6xl lg:mx-0 lg:ml-0">
           <div className="text-center lg:text-left space-y-6 md:space-y-8 lg:space-y-12 lg:max-w-4xl lg:mx-0">
             {/* Badge */}
-            <div ref={headingRef} className={`flex justify-center lg:justify-start reveal ${headingInView ? "in-view" : ""} reveal-delay-100`}>
+            <div
+              ref={headingRef}
+              className={`flex justify-center lg:justify-start reveal ${headingInView ? "in-view" : ""} reveal-delay-100`}
+            >
               <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/80 backdrop-blur-sm border border-blue-100 shadow-sm">
                 <div className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></div>
                 <span className="text-sm font-medium text-gray-700">
@@ -61,38 +64,45 @@ function Hero() {
             </div>
 
             {/* Hero Heading */}
-            <div className={`space-y-6 reveal ${headingInView ? "in-view" : ""} reveal-delay-200`}>
+            <div
+              className={`space-y-6 reveal ${headingInView ? "in-view" : ""} reveal-delay-200`}
+            >
               <h1 className="text-[64px] sm:text-7xl md:[98px] font-semibold font-Poppins text-gray-900 leading-[1.1] tracking-tight">
                 Find devices that suit{" "}
                 <span className="relative">
-                  <span className="text-transparent bg-gradient-to-r from-[#2556bc] via-blue-600 to-purple-600 bg-clip-text">
+                  <span className="text-transparent bg-linear-to-r from-sapphire via-blue-600 to-purple-600 bg-clip-text">
                     your needs
                   </span>
-                  <div className="absolute -inset-1 bg-gradient-to-r from-[#2556bc]/20 via-blue-600/20 to-purple-600/20 blur-lg -z-10 rounded-lg"></div>
+                  <div className="absolute -inset-1 bg-linear-to-r from-sapphire/20 via-blue-600/20 to-purple-600/20 blur-lg -z-10 rounded-lg"></div>
                 </span>
               </h1>
 
               <p className="text-lg sm:text-xl/snug text-gray-600 font-Be-Vietnam-Pro leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                Our buying agent learns your unique needs and guides you to the perfect device you can buy directly from the web, all under 60 seconds.
+                Our buying agent learns your unique needs and guides you to the
+                perfect device you can buy directly from the web, all under 60
+                seconds.
               </p>
             </div>
 
             {/* Stats */}
-            <div ref={statsRef} className={`flex flex-wrap justify-center lg:justify-start gap-6 sm:gap-8 py-4 reveal ${statsInView ? "in-view" : ""} reveal-delay-200`}>
+            <div
+              ref={statsRef}
+              className={`flex flex-wrap justify-center lg:justify-start gap-6 sm:gap-8 py-4 reveal ${statsInView ? "in-view" : ""} reveal-delay-200`}
+            >
               <div className="text-center lg:text-left">
-                <div className="text-2xl sm:text-3xl font-bold text-[#2556bc]">
+                <div className="text-2xl sm:text-3xl font-bold text-sapphire">
                   10K+
                 </div>
                 <div className="text-sm text-gray-600">Devices Analyzed</div>
               </div>
               <div className="text-center lg:text-left">
-                <div className="text-2xl sm:text-3xl font-bold text-[#2556bc]">
+                <div className="text-2xl sm:text-3xl font-bold text-sapphire">
                   60s
                 </div>
                 <div className="text-sm text-gray-600">Average Match Time</div>
               </div>
               <div className="text-center lg:text-left">
-                <div className="text-2xl sm:text-3xl font-bold text-[#2556bc]">
+                <div className="text-2xl sm:text-3xl font-bold text-sapphire">
                   98%
                 </div>
                 <div className="text-sm text-gray-600">Satisfaction Rate</div>
@@ -123,14 +133,14 @@ function Hero() {
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       required
-                      className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white/80 backdrop-blur-sm focus:border-[#2556bc] focus:ring-2 focus:ring-[#2556bc]/20 transition-all duration-200"
+                      className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white/80 backdrop-blur-sm focus:border-sapphire focus:ring-2 focus:ring-sapphire/20 transition-all duration-200"
                     />
                   </div>
 
                   <Button
                     type="submit"
                     disabled={loading}
-                    className="w-full bg-gradient-to-r from-[#2556bc] to-blue-600 hover:from-[#1e4a9f] hover:to-blue-700 text-white font-semibold py-3 px-6 rounded-xl transform hover:scale-[1.05] transition-all duration-200 shadow-lg hover:shadow-xl"
+                    className="w-full bg-linear-to-r from-sapphire to-blue-600 hover:from-[#1e4a9f] hover:to-blue-700 text-white font-semibold py-3 px-6 rounded-xl transform hover:scale-[1.05] transition-all duration-200 shadow-lg hover:shadow-xl"
                   >
                     {loading ? "Submitting..." : ""}
                     <span className="flex items-center justify-center gap-2">
@@ -176,12 +186,15 @@ function Hero() {
 
         {/* Hero Image visible only on desktop */}
         <div className="hidden lg:flex lg:items-stretch lg:justify-end lg:h-full">
-          <div ref={imageRef} className={`relative w-full max-w-2xl xl:max-w-3xl flex items-center reveal-scale ${imageInView ? "in-view" : ""}`}>
+          <div
+            ref={imageRef}
+            className={`relative w-full max-w-2xl xl:max-w-3xl flex items-center reveal-scale ${imageInView ? "in-view" : ""}`}
+          >
             <img
               src="/macbook3.webp"
               alt="Perfect laptop match for your needs"
               loading="eager"
-              className="w-full h-[900px] object-cover drop-shadow-2xl rounded-2xl hover:scale-105 transition-transform duration-300 max-h-[900px] lg:min-h-screen xl:max-h-[1000px]"
+              className="w-full h-225 object-cover drop-shadow-2xl rounded-2xl hover:scale-105 transition-transform duration-300 max-h-225 lg:min-h-screen xl:max-h-250"
             />
           </div>
         </div>
