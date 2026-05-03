@@ -67,13 +67,13 @@ function Hero() {
             <div
               className={`space-y-6 reveal ${headingInView ? "in-view" : ""} reveal-delay-200`}
             >
-              <h1 className="text-[64px] sm:text-7xl md:[98px] font-semibold font-Poppins text-gray-900 leading-[1.1] tracking-tight">
+              <h1 className="text-[64px] sm:text-7xl md:[98px] font-medium font-Poppins text-gray-900 leading-[1.1] tracking-tighter">
                 Find devices that suit{" "}
                 <span className="relative">
-                  <span className="text-transparent bg-linear-to-r from-sapphire via-blue-600 to-purple-600 bg-clip-text">
-                    your needs
+                  <span className="text-transparent bg-linear-to-r from-sapphire via-blue-600 to-sapphire bg-clip-text">
+                    your needs.
                   </span>
-                  <div className="absolute -inset-1 bg-linear-to-r from-sapphire/20 via-blue-600/20 to-purple-600/20 blur-lg -z-10 rounded-lg"></div>
+                  {/* <div className="absolute -inset-1 bg-linear-to-r from-sapphire/20 via-blue-600/20 to-purple-600/20 blur-lg -z-10 rounded-lg"></div> */}
                 </span>
               </h1>
 
