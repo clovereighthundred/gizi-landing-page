@@ -9,7 +9,7 @@ function ValueProp() {
   return (
     <section id="valueprop" className="relative py-16 lg:py-24 bg-white">
       {/* Subtle gradient background */}
-      <div className="absolute inset-0 bg-gradient-to-bl from-slate-50 via-white to-[#5d2de6]/8"></div>
+      <div className="absolute inset-0 bg-linear-to-bl from-slate-50 via-white to-electric-indigo/8"></div>
 
       <div className="relative z-10 container mx-auto px-4 lg:px-8">
         <div className="max-w-6xl mx-auto text-center">
@@ -37,7 +37,7 @@ function ValueProp() {
               } reveal-delay-300 flex flex-col
                 group cursor-pointer
                 transition-all duration-500 ease-out
-                hover:shadow-[0_0_40px_rgba(59,130,246,0.3)]
+                hover:outline outline-2 outline-sapphire/50
                 hover:-translate-y-1
                 hover:scale-[1.02]
               `}
@@ -45,7 +45,7 @@ function ValueProp() {
               <div className="flex flex-col items-center text-center gap-6">
                 {" "}
                 {/* Card 1 */}
-                <div className="flex-shrink-0 w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center">
+                <div className="shrink-0 w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center">
                   <DatabaseZap className="w-7 h-7 text-green-500" />
                 </div>
                 <div className="space-y-3">
@@ -66,7 +66,7 @@ function ValueProp() {
               } reveal-delay-300 flex flex-col
                 group cursor-pointer
                 transition-all duration-500 ease-out
-                hover:shadow-[0_0_40px_rgba(59,130,246,0.3)]
+                hover:outline outline-2 outline-sapphire/50
                 hover:-translate-y-1
                 hover:scale-[1.02]
               `}
@@ -74,7 +74,7 @@ function ValueProp() {
               <div className="flex flex-col items-center text-center gap-6">
                 {" "}
                 {/* Card 2 */}
-                <div className="flex-shrink-0 w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center">
+                <div className="shrink-0 w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center">
                   <Cpu className="w-7 h-7 text-blue-500" />
                 </div>
                 <div className="space-y-3">
@@ -95,7 +95,7 @@ function ValueProp() {
               } reveal-delay-300 flex flex-col
                 group cursor-pointer
                 transition-all duration-500 ease-out
-                hover:shadow-[0_0_40px_rgba(59,130,246,0.3)]
+                hover:outline outline-2 outline-sapphire/50
                 hover:-translate-y-1
                 hover:scale-[1.02]
               `}
@@ -103,7 +103,7 @@ function ValueProp() {
               <div className="flex flex-col items-center text-center gap-6">
                 {" "}
                 {/* Card 3 */}
-                <div className="flex-shrink-0 w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center">
+                <div className="shrink-0 w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center">
                   <Gem className="w-7 h-7 text-purple-500" />
                 </div>
                 <div className="space-y-3">
@@ -124,7 +124,7 @@ function ValueProp() {
               } reveal-delay-300 flex flex-col
                 group cursor-pointer
                 transition-all duration-500 ease-out
-                hover:shadow-[0_0_40px_rgba(59,130,246,0.3)]
+                hover:outline outline-2 outline-sapphire/50
                 hover:-translate-y-1
                 hover:scale-[1.02]
               `}
@@ -132,7 +132,7 @@ function ValueProp() {
               <div className="flex flex-col items-center text-center gap-6">
                 {" "}
                 {/* Card 4 */}
-                <div className="flex-shrink-0 w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center">
+                <div className="shrink-0 w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center">
                   <BarChart className="w-7 h-7 text-orange-500" />
                 </div>
                 <div className="space-y-3">
